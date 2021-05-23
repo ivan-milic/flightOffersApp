@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C695A0D2659315D004E9A5A /* OfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C695A0C2659315D004E9A5A /* OfferViewModel.swift */; };
+		7C695A0F265A6F09004E9A5A /* OffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C695A0E265A6F09004E9A5A /* OffersViewModel.swift */; };
+		7C695A14265ABE66004E9A5A /* OfferViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C695A13265ABE66004E9A5A /* OfferViewModelTests.swift */; };
+		7C695A16265AC05B004E9A5A /* offer1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C695A15265AC05B004E9A5A /* offer1.json */; };
+		7C695A18265AF1F2004E9A5A /* offer2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C695A17265AF1F2004E9A5A /* offer2.json */; };
+		7C695A1C265AFB26004E9A5A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C695A1B265AFB26004E9A5A /* NetworkManager.swift */; };
+		7C695A21265B0252004E9A5A /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C695A20265B0252004E9A5A /* MockNetworkManager.swift */; };
+		7C695A23265B03BC004E9A5A /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C695A22265B03BC004E9A5A /* response.json */; };
+		7C695A24265B14EE004E9A5A /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C695A22265B03BC004E9A5A /* response.json */; };
+		7C6EC44E2652E51F00A20243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC44D2652E51F00A20243 /* AppDelegate.swift */; };
+		7C6EC4522652E51F00A20243 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC4512652E51F00A20243 /* OffersViewController.swift */; };
+		7C6EC4552652E52000A20243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6EC4532652E52000A20243 /* Main.storyboard */; };
+		7C6EC4572652E52300A20243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6EC4562652E52300A20243 /* Assets.xcassets */; };
+		7C6EC45A2652E52300A20243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6EC4582652E52300A20243 /* LaunchScreen.storyboard */; };
+		7C6EC4652652E52300A20243 /* OffersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC4642652E52300A20243 /* OffersViewModelTests.swift */; };
+		7C6EC4702652E52300A20243 /* KiwiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC46F2652E52300A20243 /* KiwiAppUITests.swift */; };
+		7C6EC4822653D10200A20243 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC4812653D10200A20243 /* OfferTableViewCell.swift */; };
+		7C6EC4842653E12000A20243 /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC4832653E12000A20243 /* OfferModel.swift */; };
+		7C6EC486265444AF00A20243 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC485265444AF00A20243 /* Extensions.swift */; };
+		7C6EC488265594F700A20243 /* OfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6EC487265594F700A20243 /* OfferDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C6EC4612652E52300A20243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C6EC4422652E51F00A20243 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C6EC4492652E51F00A20243;
+			remoteInfo = KiwiApp;
+		};
+		7C6EC46C2652E52300A20243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C6EC4422652E51F00A20243 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C6EC4492652E51F00A20243;
+			remoteInfo = KiwiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C695A0C2659315D004E9A5A /* OfferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewModel.swift; sourceTree = "<group>"; };
+		7C695A0E265A6F09004E9A5A /* OffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModel.swift; sourceTree = "<group>"; };
+		7C695A13265ABE66004E9A5A /* OfferViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewModelTests.swift; sourceTree = "<group>"; };
+		7C695A15265AC05B004E9A5A /* offer1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = offer1.json; sourceTree = "<group>"; };
+		7C695A17265AF1F2004E9A5A /* offer2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = offer2.json; sourceTree = "<group>"; };
+		7C695A1B265AFB26004E9A5A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7C695A20265B0252004E9A5A /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		7C695A22265B03BC004E9A5A /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		7C6EC44A2652E51F00A20243 /* KiwiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6EC44D2652E51F00A20243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C6EC4512652E51F00A20243 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		7C6EC4542652E52000A20243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C6EC4562652E52300A20243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C6EC4592652E52300A20243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C6EC45B2652E52300A20243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6EC4602652E52300A20243 /* KiwiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6EC4642652E52300A20243 /* OffersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModelTests.swift; sourceTree = "<group>"; };
+		7C6EC4662652E52300A20243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6EC46B2652E52300A20243 /* KiwiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6EC46F2652E52300A20243 /* KiwiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiAppUITests.swift; sourceTree = "<group>"; };
+		7C6EC4712652E52300A20243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6EC4812653D10200A20243 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfferTableViewCell.swift; path = KiwiApp/View/OfferTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		7C6EC4832653E12000A20243 /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		7C6EC485265444AF00A20243 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7C6EC487265594F700A20243 /* OfferDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C6EC4472652E51F00A20243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6EC45D2652E52300A20243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6EC4682652E52300A20243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C695A10265ABA26004E9A5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C6EC4832653E12000A20243 /* OfferModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C695A11265ABA3F004E9A5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C6EC4512652E51F00A20243 /* OffersViewController.swift */,
+				7C6EC487265594F700A20243 /* OfferDetailsViewController.swift */,
+				7C6EC4812653D10200A20243 /* OfferTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C695A12265ABA58004E9A5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C695A0E265A6F09004E9A5A /* OffersViewModel.swift */,
+				7C695A0C2659315D004E9A5A /* OfferViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7C695A1F265B0240004E9A5A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7C695A1B265AFB26004E9A5A /* NetworkManager.swift */,
+				7C695A20265B0252004E9A5A /* MockNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7C6EC4412652E51F00A20243 = {
+			isa = PBXGroup;
+			children = (
+				7C6EC44C2652E51F00A20243 /* KiwiApp */,
+				7C6EC4632652E52300A20243 /* KiwiAppTests */,
+				7C6EC46E2652E52300A20243 /* KiwiAppUITests */,
+				7C6EC44B2652E51F00A20243 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C6EC44B2652E51F00A20243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C6EC44A2652E51F00A20243 /* KiwiApp.app */,
+				7C6EC4602652E52300A20243 /* KiwiAppTests.xctest */,
+				7C6EC46B2652E52300A20243 /* KiwiAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C6EC44C2652E51F00A20243 /* KiwiApp */ = {
+			isa = PBXGroup;
+			children = (
+				7C695A10265ABA26004E9A5A /* Model */,
+				7C695A11265ABA3F004E9A5A /* View */,
+				7C695A12265ABA58004E9A5A /* ViewModel */,
+				7C6EC47D2652E7FC00A20243 /* Storyboards */,
+				7C695A1F265B0240004E9A5A /* Network */,
+				7C6EC45B2652E52300A20243 /* Info.plist */,
+				7C6EC4562652E52300A20243 /* Assets.xcassets */,
+				7C6EC485265444AF00A20243 /* Extensions.swift */,
+				7C6EC44D2652E51F00A20243 /* AppDelegate.swift */,
+			);
+			path = KiwiApp;
+			sourceTree = "<group>";
+		};
+		7C6EC4632652E52300A20243 /* KiwiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C6EC4642652E52300A20243 /* OffersViewModelTests.swift */,
+				7C695A13265ABE66004E9A5A /* OfferViewModelTests.swift */,
+				7C6EC4662652E52300A20243 /* Info.plist */,
+				7C695A15265AC05B004E9A5A /* offer1.json */,
+				7C695A17265AF1F2004E9A5A /* offer2.json */,
+				7C695A22265B03BC004E9A5A /* response.json */,
+			);
+			path = KiwiAppTests;
+			sourceTree = "<group>";
+		};
+		7C6EC46E2652E52300A20243 /* KiwiAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C6EC46F2652E52300A20243 /* KiwiAppUITests.swift */,
+				7C6EC4712652E52300A20243 /* Info.plist */,
+			);
+			path = KiwiAppUITests;
+			sourceTree = "<group>";
+		};
+		7C6EC47D2652E7FC00A20243 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7C6EC4532652E52000A20243 /* Main.storyboard */,
+				7C6EC4582652E52300A20243 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C6EC4492652E51F00A20243 /* KiwiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6EC4742652E52300A20243 /* Build configuration list for PBXNativeTarget "KiwiApp" */;
+			buildPhases = (
+				7C6EC4462652E51F00A20243 /* Sources */,
+				7C6EC4472652E51F00A20243 /* Frameworks */,
+				7C6EC4482652E51F00A20243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KiwiApp;
+			productName = KiwiApp;
+			productReference = 7C6EC44A2652E51F00A20243 /* KiwiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C6EC45F2652E52300A20243 /* KiwiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6EC4772652E52300A20243 /* Build configuration list for PBXNativeTarget "KiwiAppTests" */;
+			buildPhases = (
+				7C6EC45C2652E52300A20243 /* Sources */,
+				7C6EC45D2652E52300A20243 /* Frameworks */,
+				7C6EC45E2652E52300A20243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C6EC4622652E52300A20243 /* PBXTargetDependency */,
+			);
+			name = KiwiAppTests;
+			productName = KiwiAppTests;
+			productReference = 7C6EC4602652E52300A20243 /* KiwiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C6EC46A2652E52300A20243 /* KiwiAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6EC47A2652E52300A20243 /* Build configuration list for PBXNativeTarget "KiwiAppUITests" */;
+			buildPhases = (
+				7C6EC4672652E52300A20243 /* Sources */,
+				7C6EC4682652E52300A20243 /* Frameworks */,
+				7C6EC4692652E52300A20243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C6EC46D2652E52300A20243 /* PBXTargetDependency */,
+			);
+			name = KiwiAppUITests;
+			productName = KiwiAppUITests;
+			productReference = 7C6EC46B2652E52300A20243 /* KiwiAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C6EC4422652E51F00A20243 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7C6EC4492652E51F00A20243 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7C6EC45F2652E52300A20243 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7C6EC4492652E51F00A20243;
+					};
+					7C6EC46A2652E52300A20243 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7C6EC4492652E51F00A20243;
+					};
+				};
+			};
+			buildConfigurationList = 7C6EC4452652E51F00A20243 /* Build configuration list for PBXProject "KiwiApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C6EC4412652E51F00A20243;
+			productRefGroup = 7C6EC44B2652E51F00A20243 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C6EC4492652E51F00A20243 /* KiwiApp */,
+				7C6EC45F2652E52300A20243 /* KiwiAppTests */,
+				7C6EC46A2652E52300A20243 /* KiwiAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C6EC4482652E51F00A20243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C695A23265B03BC004E9A5A /* response.json in Resources */,
+				7C6EC45A2652E52300A20243 /* LaunchScreen.storyboard in Resources */,
+				7C6EC4572652E52300A20243 /* Assets.xcassets in Resources */,
+				7C6EC4552652E52000A20243 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6EC45E2652E52300A20243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C695A16265AC05B004E9A5A /* offer1.json in Resources */,
+				7C695A24265B14EE004E9A5A /* response.json in Resources */,
+				7C695A18265AF1F2004E9A5A /* offer2.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6EC4692652E52300A20243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C6EC4462652E51F00A20243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C695A1C265AFB26004E9A5A /* NetworkManager.swift in Sources */,
+				7C6EC488265594F700A20243 /* OfferDetailsViewController.swift in Sources */,
+				7C695A0F265A6F09004E9A5A /* OffersViewModel.swift in Sources */,
+				7C6EC486265444AF00A20243 /* Extensions.swift in Sources */,
+				7C695A21265B0252004E9A5A /* MockNetworkManager.swift in Sources */,
+				7C6EC4842653E12000A20243 /* OfferModel.swift in Sources */,
+				7C6EC4822653D10200A20243 /* OfferTableViewCell.swift in Sources */,
+				7C6EC4522652E51F00A20243 /* OffersViewController.swift in Sources */,
+				7C6EC44E2652E51F00A20243 /* AppDelegate.swift in Sources */,
+				7C695A0D2659315D004E9A5A /* OfferViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6EC45C2652E52300A20243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6EC4652652E52300A20243 /* OffersViewModelTests.swift in Sources */,
+				7C695A14265ABE66004E9A5A /* OfferViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6EC4672652E52300A20243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6EC4702652E52300A20243 /* KiwiAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C6EC4622652E52300A20243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C6EC4492652E51F00A20243 /* KiwiApp */;
+			targetProxy = 7C6EC4612652E52300A20243 /* PBXContainerItemProxy */;
+		};
+		7C6EC46D2652E52300A20243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C6EC4492652E51F00A20243 /* KiwiApp */;
+			targetProxy = 7C6EC46C2652E52300A20243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C6EC4532652E52000A20243 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C6EC4542652E52000A20243 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C6EC4582652E52300A20243 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C6EC4592652E52300A20243 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C6EC4722652E52300A20243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C6EC4732652E52300A20243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C6EC4752652E52300A20243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6229SDB42N;
+				INFOPLIST_FILE = KiwiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivanmilic.KiwiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C6EC4762652E52300A20243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6229SDB42N;
+				INFOPLIST_FILE = KiwiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivanmilic.KiwiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7C6EC4782652E52300A20243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6229SDB42N;
+				INFOPLIST_FILE = KiwiAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivanmilic.KiwiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KiwiApp.app/KiwiApp";
+			};
+			name = Debug;
+		};
+		7C6EC4792652E52300A20243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6229SDB42N;
+				INFOPLIST_FILE = KiwiAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivanmilic.KiwiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KiwiApp.app/KiwiApp";
+			};
+			name = Release;
+		};
+		7C6EC47B2652E52300A20243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6229SDB42N;
+				INFOPLIST_FILE = KiwiAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivanmilic.KiwiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KiwiApp;
+			};
+			name = Debug;
+		};
+		7C6EC47C2652E52300A20243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6229SDB42N;
+				INFOPLIST_FILE = KiwiAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ivanmilic.KiwiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KiwiApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C6EC4452652E51F00A20243 /* Build configuration list for PBXProject "KiwiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6EC4722652E52300A20243 /* Debug */,
+				7C6EC4732652E52300A20243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6EC4742652E52300A20243 /* Build configuration list for PBXNativeTarget "KiwiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6EC4752652E52300A20243 /* Debug */,
+				7C6EC4762652E52300A20243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6EC4772652E52300A20243 /* Build configuration list for PBXNativeTarget "KiwiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6EC4782652E52300A20243 /* Debug */,
+				7C6EC4792652E52300A20243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6EC47A2652E52300A20243 /* Build configuration list for PBXNativeTarget "KiwiAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6EC47B2652E52300A20243 /* Debug */,
+				7C6EC47C2652E52300A20243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C6EC4422652E51F00A20243 /* Project object */;
+}

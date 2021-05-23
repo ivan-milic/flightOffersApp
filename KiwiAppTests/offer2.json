@@ -1,0 +1,33 @@
+{
+    "id": "1ad913a24954000087462203_0",
+    "cityFrom": "Wrocław",
+    "cityCodeFrom": "WRO",
+    "cityTo": "Palma, Majorca",
+    "countryFrom": {
+        "code": "PL",
+        "name": "Poland"
+    },
+    "countryTo": {
+        "code": "ES",
+        "name": "Spain"
+    },
+    "dTime": 1621935900,
+    "aTime": 1621945800,
+    "fly_duration": "2h 45m",
+    "price": 72,
+    "availability": {
+        "seats": null
+    },
+    "route": [
+        {
+            "cityFrom": "Wrocław",
+            "cityTo": "Paris"
+        },
+        {
+            "cityFrom": "Paris",
+            "cityTo": "Palma, Majorca"
+        }
+    ],
+    "mapIdto": "palma_es"
+}
+
